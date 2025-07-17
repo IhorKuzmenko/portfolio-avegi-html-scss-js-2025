@@ -1,0 +1,119 @@
+footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    @media (min-width) {
+        margin-top: 120px;
+        margin-bottom: 16px;
+    }
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer__list_social_media {
+    display: flex;
+    align-items: center;
+
+    li:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.footer__link_social_media {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+    @media (min-width:1440px) {
+        font-size: 20px;
+    }
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+
+    li:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.footer__link {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footer__description {
+    margin-top: 28px;
+    text-align: center;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+    @media (min-width:1440px) {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer__list_mobile {
+        display: none;
+    }
+}
+
+.footer__link_desktop {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    @media (max-width:1439px) {
+        display: none;
+    }
+}

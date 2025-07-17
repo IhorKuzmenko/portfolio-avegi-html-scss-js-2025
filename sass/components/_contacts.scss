@@ -1,0 +1,141 @@
+.contacts {
+    margin-top: 48px;
+
+    @media (min-width: 1440px) {
+        margin-top: 120px;
+    }
+}
+
+.contacts__title {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: inherit;
+
+    @media (min-width: 1440px) {
+        font-size: 34px;
+    }
+}
+
+.contacts__description {
+    margin-top: 20px;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: inherit;
+
+    @media (min-width: 1440px) {
+        margin-top: 32px;
+        font-size: 18px;
+    }
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+
+    @media (min-width:1440px) {
+        margin-top: 72px;
+    }
+
+    input {
+        margin-bottom: 16px;
+
+        @media (min-width:1440px) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.contacts__input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 342px;
+    border-color: transparent;
+    border-bottom: 1px solid $black-color;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: inherit;
+
+    @media (min-width: 1440px) {
+        width: 562px;
+        font-size: 18px;
+    }
+
+    transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid var(--accent-color);
+    }
+}
+
+.contacts__button {
+    cursor: pointer;
+    margin-top: 4px;
+    width: 176px;
+    height: 46px;
+    border-color: transparent;
+    background-color: $black-color;
+    color: $white-color;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+
+    @media (min-width: 1440px) {
+        font-size: 18px;
+    }
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $black-color;
+    }
+}
+
+.contacts__list {
+    display: flex;
+    margin-top: 28px;
+
+    @media (min-width: 1440px) {
+        margin-top: 40px;
+    }
+
+    li:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.contacts__image {
+    width: 562px;
+    height: 566px;
+
+    @media (max-width:1439px) {
+        display: none;
+    }
+}
+
+@media (min-width:1440px) {
+    .contacts__container_desktop {
+        display: flex;
+
+        div:first-child{
+            margin-right: 136px;
+        }
+    }
+}

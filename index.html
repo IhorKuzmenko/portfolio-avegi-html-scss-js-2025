@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo" href="#">
+                <svg class="header__svg">
+                    <use class="header__icon" href="./images/images.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <button class="header__button js-open-menu" type="button" aria-expanded="false" aria-controls="menu_mobile">
+            </button>
+            <div class="menu_mobile js-menu-container" id="menu_mobile">
+                <button class="menu_mobile__button js-close-menu" type="button" aria-expanded="false"
+                    aria-controls="menu_mobile">
+                    <img src="./images/icon-cross.svg" width="26" height="28">
+                </button>
+                <ul class="menu_mobile__list">
+                    <li class="menu_mobile__item"><a href="#about_us" class="menu_mobile__link">About us</a></li>
+                    <li class="menu_mobile__item"><a href="#projects" class="menu_mobile__link">Projects</a></li>
+                    <li class="menu_mobile__item"><a href="#reviews" class="menu_mobile__link">Reviews</a></li>
+                    <li class="menu_mobile__item"><a href="#contacts" class="menu_mobile__link">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="menu_desktop">
+                <ul class="menu_desktop__list">
+                    <li><a class="menu_desktop__link" href="#about_us">About us</a></li>
+                    <li><a class="menu_desktop__link" href="#projects">Projects</a></li>
+                    <li><a class="menu_desktop__link" href="#">Materials</a></li>
+                    <li><a class="menu_desktop__link" href="#reviews">Reviews</a></li>
+                </ul>
+                <p><a class="menu_desktop__number" href='#'>+7 999 999 99 99</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero_container__title">
+                    <h class="hero__title">Exclusive and unconventional furniture for the home</h>
+                    <a class="hero__link_desktop" href="#contacts">Order a Project</a>
+                </div>
+                <div class="hero__container_description">
+                    <div>
+                        <p class="hero__description">We can manufacture any type of furniture for your project and find
+                            a
+                            production solution for any
+                            concept.</p>
+                        <img class="hero__image_desktop"
+                            srcset="./images/hero_image_1.jpg 1x, ./images/hero_image_1@2x.jpg 2x"
+                            src="./images/hero_image_1.jpg" alt="Sofa, table, lamp, flower, paintings">
+                    </div>
+                    <div>
+                        <a class="hero__link" href="#contacts">Order a Project</a>
+                        <img class="hero__image" srcset="./images/hero_image_2.jpg 1x, ./images/hero_image_2@2x.jpg 2x"
+                            src="./images/hero_image_2.jpg" alt="Furniture, plants, mirror">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about_us" id="about_us">
+            <div class="container">
+                <h2 class="about_us__title">About us</h2>
+                <div class="about_us__container_desktop">
+                    <div>
+                        <h2 class="about_us__desktop_title">We have been creating furniture for your comfort for over 5
+                            years</h2>
+                    </div>
+                    <div>
+                        <p class="about_us__description">We are a team of professionals capable of manufacturing any
+                            type of
+                            furniture for your project, as
+                            well as finding production solutions for any concept.</p>
+                        <p class="about_us__description about_us__description--margin">Our main goal is to bring the
+                            boldest
+                            ideas to life – with quality and precision.</p>
+                        <p class="about_us__description about_us__description--margin">We work with natural materials
+                            such
+                            as
+                            glass, wood, concrete, stone, metal, and epoxy resin.</p>
+                        <ul class="about_us__list">
+                            <li>
+                                <p class="about_us__list_title">1 year</p>
+                                <p class="about_us__list_desription">warranty on all products</p>
+                            </li>
+                            <li>
+                                <p class="about_us__list_title">300+</p>
+                                <p class="about_us__list_desription">completed projects</p>
+                            </li>
+                            <li>
+                                <p class="about_us__list_title">15 days</p>
+                                <p class="about_us__list_desription">production time</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how_we_work">
+            <div class="container how_we_work__container_desktop">
+                <div>
+                    <h2 class="how_we_work__title">How we Work</h2>
+                </div>
+                <div>
+                    <p class="how_we_work__description">Algorithm for working with us for convenience and understanding
+                        of
+                        the project</p>
+                    <ul class="how_we_work__list">
+                        <li>
+                            <h3 class="how_we_work__item">Idea</h3>
+                            <p class="how_we_work__item_description">The client comes to us with an idea – this
+                                could be
+                                an
+                                image, a sketch, or any other
+                                reference. We analyze how to bring it to life, create technical drawings, and
+                                suggest
+                                suitable materials.</p>
+                        </li>
+                        <li>
+                            <h3 class="how_we_work__item">Technical Specification</h3>
+                            <p class="how_we_work__item_description">We turn the idea into a detailed technical task.
+                                This
+                                includes drawings and preliminary
+                                engineering solutions based on the client’s vision.</p>
+                        </li>
+                        <li>
+                            <h3 class="how_we_work__item">Commercial Offer</h3>
+                            <p class="how_we_work__item_description">We prefer to work with natural materials, but we
+                                can
+                                adapt any budget by simplifying
+                                materials or design. We align the commercial offer with the client’s expectations and
+                                financial limits.</p>
+                        </li>
+                        <li>
+                            <h3 class="how_we_work__item">Preparation of a working project</h3>
+                            <p class="how_we_work__item_description">We prepare all working documentation and technical
+                                drawings – this is the foundation for
+                                high-quality production. At this stage, we finalize all dimensions, materials, and
+                                designs
+                                with the client before production begins.</p>
+                        </li>
+                        <li>
+                            <h3 class="how_we_work__item">Production & Installation</h3>
+                            <p class="how_we_work__item_description">Production takes from 15 working days, depending on
+                                complexity and volume. We also handle
+                                installation ourselves – quickly and with precision.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="projects__title">Projects</h2>
+                <div class="mobile_slider__container">
+                    <ul class="project__list">
+                        <li class="project__item">
+                            <img class="project__image" srcset="./images/project_1.jpg 1x, ./images/project_1@2x.jpg 2x"
+                                src="./images/project_1.jpg" alt="TV stand and TV">
+                            <p class="project__description">TV stand</p>
+                        </li>
+                        <li class="project__item">
+                            <img class="project__image" srcset="./images/project_2.jpg 1x, ./images/project_2@2x.jpg 2x"
+                                src="./images/project_2.jpg" alt="Kitchen set">
+                            <p class="project__description">Project 2</p>
+                        </li>
+                        <li class="project__item">
+                            <img class="project__image" srcset="./images/project_3.jpg 1x, ./images/project_3@2x.jpg 2x"
+                                src="./images/project_3.jpg" alt="Sofa, armchair, bookcase, TV with stand">
+                            <p class="project__description">Project 3</p>
+                        </li>
+                        <li class="project__item">
+                            <img class="project__image" srcset="./images/project_4.jpg 1x, ./images/project_4@2x.jpg 2x"
+                                src="./images/project_4.jpg" alt="Wardrobe, nightstand, shelves, aroma diffuser">
+                            <p class="project__description">Project 4</p>
+                        </li>
+                        <li class="project__item">
+                            <img class="project__image" srcset="./images/project_5.jpg 1x, ./images/project_5@2x.jpg 2x"
+                                src="./images/project_5.jpg" alt="Bed, armchair, stairs">
+                            <p class="project__description">Project 5</p>
+                        </li>
+                        <li class="project__item">
+                            <img class="project__image" srcset="./images/project_6.jpg 1x, ./images/project_6@2x.jpg 2x"
+                                src="./images/project_6.jpg" alt="Dresser, plants, paintings">
+                            <p class="project__description">Project 6</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="reviews__title">Reviews</h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <svg width="32" height="32">
+                            <use href="./images/images.svg#icon-quotes" width="32" height="32"></use>
+                        </svg>
+                        <p class="reviews__name">Igor Antonov</p>
+                        <p class="reviews__description">I reached out to Aveji based on a recommendation. The team
+                            immediately understood the design
+                            I wanted. They provided several options and created sketches within a week. I’m very pleased
+                            with the result – everything was top-notch.</p>
+                    </li>
+                    <li class="reviews__item">
+                        <svg width="32" height="32">
+                            <use href="./images/images.svg#icon-quotes" width="32" height="32"></use>
+                        </svg>
+                        <p class="reviews__name">Olga Ivanova</p>
+                        <p class="reviews__description">After placing a couple of orders with Aveji, I’m convinced that
+                            from now on, I’ll only turn
+                            to them for furniture. Absolutely any solutions, in any size and form factor – exactly what
+                            I needed!</p>
+                    </li>
+                    <li class="reviews__item">
+                        <svg width="32" height="32">
+                            <use href="./images/images.svg#icon-quotes" width="32" height="32"></use>
+                        </svg>
+                        <p class="reviews__name">Arkady Makarov</p>
+                        <p class="reviews__description">Aveji are true professionals. They quickly understood my idea,
+                            created the design, agreed on
+                            all details, and manufactured the furniture. Then they even assembled everything on-site for
+                            free. Many thanks!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__container_desktop">
+                    <div>
+                        <img class="contacts__image"
+                            srcset="./images/contacts_image.jpg 1x, ./images/contacts_image@2x.jpg 2x"
+                            src="/images/contacts_image.jpg" alt="Sofa, table, TV, flower">
+                    </div>
+                    <div>
+                        <h2 class="contacts__title">Do you want to order a project?</h2>
+                        <p class="contacts__description">Leave a request, and we will call you back</p>
+                        <form class="contacts__form">
+                            <input class="contacts__input" type="text" name="name" placeholder="Name">
+                            <input class="contacts__input" type="email" name="mail" placeholder="E-mail">
+                            <input class="contacts__input" type="tel" name="telephone" placeholder="Telephone">
+                            <button class="contacts__button" type="submit">Submit request</button>
+                        </form>
+                        <ul class="contacts__list">
+                            <li><a href="#">
+                                    <img src="./images/app_store.png">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="./images/play_market.png">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <ul class="footer__list_social_media">
+                <li><a class="footer__link_social_media" href="#">Facebook</a></li>
+                <li><a class="footer__link_social_media" href="#">Telegram</a></li>
+            </ul>
+            <ul class="footer__list footer__list_mobile">
+                <li><a class="footer__link" href="#">Privacy policy</a></li>
+                <li><a class="footer__link" href="#">Payment and delivery</a></li>
+            </ul>
+            <p><a class="footer__link_desktop" href="#">Privacy policy / Payment and delivery</a></p>
+            <p class="footer__description"> &#169; 2023 Aveji<br> All rights reserved</p>
+        </div>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+.hero {
+    margin-top: 20px;
+
+    @media (min-width: 1440px) {
+        margin-top: 40px;
+    }
+}
+
+.hero__title {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: inherit;
+
+    @media (min-width: 1440px) {
+        font-size: 72px;
+        width: 794px;
+    }
+}
+
+.hero__description {
+    margin-top: 20px;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: inherit;
+
+    @media (min-width: 1440px) {
+        font-size: 20px;
+    }
+}
+
+.hero__link {
+    display: inline-block;
+    margin-top: 24px;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: inherit;
+    border-bottom: 2px solid $black-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border-bottom: 2px solid $accent-color;
+    }
+
+    @media (min-width: 1440px) {
+        display: none;
+    }
+}
+
+.hero__image {
+    margin-top: 24px;
+    width: 343px;
+    height: 261px;
+
+    @media (min-width: 1440px) {
+        width: 678px;
+        height: 809px;
+    }
+}
+
+.hero__link_desktop {
+    display: inline-block;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: inherit;
+    border-bottom: 2px solid $black-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border-bottom: 2px solid $accent-color;
+    }
+
+    @media (max-width:1439px) {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero_container__title {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .hero__image_desktop {
+        width: 329px;
+        height: 493px;
+    }
+
+    .hero__container_description {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        div:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+.hero__image_desktop{
+    @media (max-width: 1439px){
+        display: none;
+    }
+}
