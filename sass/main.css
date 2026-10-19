@@ -475,105 +475,111 @@ img {
 .how_we_work {
   margin-top: 48px;
 }
+@media (min-width: 768px) {
+  .how_we_work {
+    margin-top: 80px;
+  }
+}
 @media (min-width: 1440px) {
   .how_we_work {
     margin-top: 120px;
   }
 }
 
+@media (min-width: 1440px) {
+  .how_we_work__container_desktop {
+    display: grid;
+    grid-template-columns: minmax(0, 562px) minmax(0, 1fr);
+    -moz-column-gap: 135px;
+         column-gap: 135px;
+    align-items: start;
+  }
+}
+
 .how_we_work__title {
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 28px;
+  font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0px;
-  color: inherit;
+}
+@media (min-width: 768px) {
+  .how_we_work__title {
+    font-size: 32px;
+  }
 }
 @media (min-width: 1440px) {
   .how_we_work__title {
-    width: 562px;
     font-size: 34px;
   }
 }
 
 .how_we_work__description {
   margin-top: 20px;
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0px;
-  color: inherit;
+  line-height: 1.4;
 }
 @media (min-width: 1440px) {
   .how_we_work__description {
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 18px;
   }
 }
 
 .how_we_work__list {
-  margin-top: 28px;
-  padding-top: 16px;
   display: flex;
   flex-direction: column;
+  margin-top: 28px;
+  padding-top: 16px;
 }
 @media (min-width: 1440px) {
   .how_we_work__list {
     margin-top: 44px;
   }
 }
-.how_we_work__list li:not(:last-child) {
-  margin-bottom: 20px;
+.how_we_work__list > li {
   padding-bottom: 20px;
+}
+.how_we_work__list > li:not(:last-child) {
+  margin-bottom: 20px;
   border-bottom: 1px solid #212529;
 }
 @media (min-width: 1440px) {
-  .how_we_work__list li {
-    display: flex;
+  .how_we_work__list > li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    align-items: start;
   }
 }
 
 .how_we_work__item {
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0px;
-  color: inherit;
+}
+@media (min-width: 768px) {
+  .how_we_work__item {
+    font-size: 26px;
+  }
 }
 @media (min-width: 1440px) {
   .how_we_work__item {
-    margin-right: 20px;
-    width: 328px;
     font-size: 28px;
   }
 }
 
 .how_we_work__item_description {
   margin-top: 20px;
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0px;
-  color: inherit;
+  line-height: 1.4;
 }
 @media (min-width: 1440px) {
   .how_we_work__item_description {
-    width: 329px;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 18px;
   }
 }
 
-@media (min-width: 1440px) {
-  .how_we_work__container_desktop {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-  }
-}
 .projects {
   margin-top: 48px;
 }
